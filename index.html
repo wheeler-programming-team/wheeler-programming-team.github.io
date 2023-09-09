@@ -24,12 +24,37 @@
     box-shadow: rgb(64, 64, 64) 0.5px 0.5px 10px;
   }
   .infoBoxContainer {
-    display: grid;
-    grid-template-columns: 33% 40% 20%;
+    display: flex;
+    flex-direction: row;
     grid-template-rows: 40% 27.5% 0%;
     height: 79vh;
     grid-gap: 1em;
-    margin: 1em;
+    margin: 2em;
+    margin-right: 8em;
+
+  }
+  .flexColOne {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1;
+    height: fit-content;
+  }
+  .flexColTwo {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    max-width: 30vw;
+    grid-row: 1;
+    height: fit-content;
+  }
+  .flexColThree {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    max-width: 16vw;
+    grid-row: 1;
+    height: fit-content;
   }
   .infoBox {
     margin: 1em;
@@ -96,74 +121,84 @@
   <div class="titleContainer">
     <h1>Wheeler Programming Club!</h1>
   </div>
+  
   <div class="infoBoxContainer">
-    <div class="infoBox goals" >
-      <h2>Goals!</h2>
-      <hr>
-      <p>
-        The goal of the programming club is to educate the upper school student body about computer science, as well as showcase and organize amazing computer science projects that our members think up.
-        <br>
-        <br>
-        In past years, we have gotten speakers in the computer 
-        science field to talk about their unique work, but this 
-        year we want to turn things up a notch by committing to 
-        larger projects, some ideas include:
-       <ul><li>
-        A web based videogame coded in javascript
-       </li><li>
-        A raspberry pi based IoT project
-        </li><li>
-        A weather app for a custom built weather station
-        </li>
-      </ul>
-    We would love your help in any of these sorts of projects, and would love to hear what else you would like to do with the programming club!</p>
-  </div>
-  <div class="infoBox learned">
-    <h2>Do I need to know how to code to join?</h2>
-    <hr>
-    <p>
-      No! In the past we have held a couple of programming 
-      workshops to teach the basics of coding, and we plan 
-      to do more of these in the future. For projects, it 
-      is useful to know how to code, but your ideas are 
-      just as valuable as your coding skills. If you are 
-      passionate about computer science, we would love to 
-      have you. 
+    <div class="flexColOne">
+      <div class="infoBox goals" >
+            <h2>Goals!</h2>
+            <hr>
+            <p>
+              The goal of the programming club is to educate the upper school student body about computer science, as well as showcase and organize amazing computer science projects that our members think up.
+              <br>
+              <br>
+              In past years, we have gotten speakers in the computer 
+              science field to talk about their unique work, but this 
+              year we want to turn things up a notch by committing to 
+              larger projects, some ideas include:
+            <ul><li>
+              A web based videogame coded in javascript
+            </li><li>
+              A raspberry pi based IoT project
+              </li><li>
+              A weather app for a custom built weather station
+              </li>
+            </ul>
+          We would love your help in any of these sorts of projects, and would love to hear what else you would like to do with the programming club!</p>
+        </div>
+    </div>
+    <div class="flexColTwo">
+      <div class="infoBox learned">
+        <h2>Do I need to know how to code to join?</h2>
+        <hr>
+        <p>
+          No! In the past we have held a couple of programming 
+          workshops to teach the basics of coding, and we plan 
+          to do more of these in the future. For projects, it 
+          is useful to know how to code, but your ideas are 
+          just as valuable as your coding skills. If you are 
+          passionate about computer science, we would love to 
+          have you. 
+    
+          </p>  
+        </div>
+          <div class="infoBox classroom">
+            <h2>Classroom</h2>
+            <hr>
+            <div class="linkContainer">
+              <a href="https://classroom.google.com/c/MTY4NTg5NzY0MTda?cjc=c5jphuc">Join!</a>
+          
+            </div>
+          </div>
+          <div class="infoBox github">
+            <h2>GitHub</h2>
+            <hr>
+            <p>
+              If you want to be added to the github, 
+              shoot me an email at <u>daniel.duarte-baird@wheelergmail.org</u> 
+              and I'll add you as soon as I can.
+            </p>
+          </div>
+    </div>
+    <div class="flexColThree">
+      <div class="infoBox leadership">
+        <h2>Leadership</h2>
+        <hr>
+        <img src="media/IMG_3271.png" class="img">
+        <p>
+          Hey y'all, my name's Daniel, and I'm the programming club head. 
+          I really like computer science and coding, and especially love 
+          writing code for hardware that I can interact with physically.
+          I am a lead developer for the robotics team, and have spent some
+           time working as a software engineer at a tech startup, so if you ever have any 
+           questions about computer science, I am always down to share 
+           my opinion with you. In addition to coding, I love playing 
+           music, surfing, and woodworking :)
+          </p>  
+      </div>
+    </div>
+    
+  
 
-      </p>  
-</div>
-<div class="infoBox leadership">
-  <h2>Leadership</h2>
-  <hr>
-  <img src="media/IMG_3271.png" class="img">
-  <p>
-    Hey y'all, my name's Daniel, and I'm the programming club head. 
-    I really like computer science and coding, and especially love 
-    writing code for hardware that I can interact with physically.
-    I am a lead developer for the robotics team, and have spent some
-     time working as a software engineer at a tech startup, so if you ever have any 
-     questions about computer science, I am always down to share 
-     my opinion with you. In addition to coding, I love playing 
-     music, surfing, and woodworking :)
-    </p>  
-</div>
-<div class="infoBox classroom">
-  <h2>Classroom</h2>
-  <hr>
-  <div class="linkContainer">
-    <a href="https://classroom.google.com/c/MTY4NTg5NzY0MTda?cjc=c5jphuc">Join!</a>
-
-  </div>
-</div>
-<div class="infoBox github">
-  <h2>GitHub</h2>
-  <hr>
-  <p>
-    If you want to be added to the github, 
-    shoot me an email at <u>daniel.duarte-baird@wheelergmail.org</u> 
-    and I'll add you as soon as I can.
-  </p>
-</div>
   </div>
   
 </body>
